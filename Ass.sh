@@ -1,2 +1,3 @@
 find * -type f -size +10000c 
--exec mv ~/home/Archive  {}  \:
+-exec mv ~/home/archive  {}  \:
+
