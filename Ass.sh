@@ -2,14 +2,12 @@ threshold=5
 source="./Source/"
 archive="./Archive/"
 for filename in $(ls $source); do
-	echo filename $filename
 	size=$(du --apparent-size $source$filename | awk '{ print $1 }')
-	echo size $size 
 	if [ $size -ge $threshold ]
 	then
 		tar -cvf $archive$filename.tgz $source$filename 
-		echo "greater" $filename
+		echo "greater, so compressing : " $filename
 	else
-		echo "smaller" $filename
+		echo "smaller, so ignoring : " $filename
 	fi
 done;
