@@ -1,0 +1,12 @@
+Create 2 folders Source, Archive
+In the source, keep multiple files of multiple sizes.
+The task is to archive the file with highest size by compressing it using tar or tgz format. The archived file name should be nameoffile_ddmmmyyyy_hhmmss.tgz and move it to the archive folder or directory
+
+Configuration file: - 
+Source file Path
+Archive file path
+File Size threshold in integer meaning if the file size is equal or greater than this number, archival process should get triggered.
+The above 3 should be maintained in a CSV or TXT based configuration file 
+
+Consider all exception handling use cases
+
